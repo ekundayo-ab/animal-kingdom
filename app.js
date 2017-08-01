@@ -42,4 +42,6 @@ class Bird extends Animal {
 }
 
 
-
+module.exports = {
+	Animal, Dog, Bird
+}
