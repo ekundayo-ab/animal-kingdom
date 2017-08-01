@@ -19,4 +19,15 @@ class Animal {
 
 }
 
+class Dog extends Animal {
+	constructor(noOfLegs, soundType) {
+		super(4, "Barks!");
+		this.name = "Dog";
+	}
+
+	snarl(){
+		return "hummmm humyaa!";
+	}
+}
+
 
