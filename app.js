@@ -30,4 +30,16 @@ class Dog extends Animal {
 	}
 }
 
+class Bird extends Animal {
+	constructor(noOfLegs, soundType) {
+		super(2, "Chirps!");	
+		this.name = "Bird";
+	}
+
+	fly(){
+		return "flap flap";
+	}
+}
+
+
 
