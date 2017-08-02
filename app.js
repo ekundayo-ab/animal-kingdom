@@ -10,7 +10,7 @@ class Animal {
   }
 
   getLegs() {
-    return `${this.name}'s have ${this.noOfLegs} legs`;
+    return `${this.name}s have ${this.noOfLegs} legs`;
   }
 
   getSound() {
