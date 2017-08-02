@@ -1,47 +1,46 @@
 class Animal {
-	constructor(noOfLegs, soundType) {
-		this.name = "Animal";
-		this.noOfLegs = noOfLegs;
-		this.soundType = soundType;
-	}
+  constructor(noOfLegs, soundType) {
+    this.name = 'Animal';
+    this.noOfLegs = noOfLegs;
+    this.soundType = soundType;
+  }
 
-	getName(){
-		return "This animal is a " + this.name;
-	}
+  getName() {
+    return `This animal is a ${this.name}`;
+  }
 
-	getLegs(){
-		return this.name + "s have " + this.noOfLegs + " legs";
-	}
+  getLegs() {
+    return `${this.name}'s have ${this.noOfLegs} legs`;
+  }
 
-	getSound(){
-		return this.name + " " + this.soundType;
-	}
-
+  getSound() {
+    return `${this.name} ${this.soundType}`;
+  }
 }
 
 class Dog extends Animal {
-	constructor(noOfLegs, soundType) {
-		super(4, "Barks!");
-		this.name = "Dog";
-	}
+  constructor() {
+    super(4, 'Barks!');
+    this.name = 'Dog';
+  }
 
-	snarl(){
-		return "hummmm humyaa!";
-	}
+  static snarl() {
+    return 'hummmm humyaa!';
+  }
 }
 
 class Bird extends Animal {
-	constructor(noOfLegs, soundType) {
-		super(2, "Chirps!");	
-		this.name = "Bird";
-	}
+  constructor() {
+    super(2, 'Chirps!');
+    this.name = 'Bird';
+  }
 
-	fly(){
-		return "flap flap";
-	}
+  static fly() {
+    return 'flap flap';
+  }
 }
 
 
 module.exports = {
-	Animal, Dog, Bird
-}
+  Animal, Dog, Bird,
+};
