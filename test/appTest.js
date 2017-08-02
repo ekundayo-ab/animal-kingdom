@@ -45,13 +45,13 @@ describe('Animal', () => {
 
   describe('check for dog\'s character', () => {
     it('should return hummmm humyaa', () => {
-      assert.equal(dog.snarl(), 'hummmm humyaa!');
+      assert.equal(Dog.snarl(), 'hummmm humyaa!');
     });
   });
 
   describe('check for bird\'s character', () => {
     it('should return flap flap', () => {
-      assert.equal(bird.fly(), 'flap flap');
+      assert.equal(Bird.fly(), 'flap flap');
     });
   });
 });
